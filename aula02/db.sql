@@ -14,7 +14,7 @@ USE db_escola;
 SHOW TABLES;
 
 -- Criar uma Tabela --
-CREATE TABLE tb_cursos (
+CREATE TABLE tb_curso (
     id INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(100) NOT NULL,
     carga_horaria INT(4)
@@ -30,3 +30,25 @@ DROP TABLE tb_curso;
 ALTER TABLE tb_curso
     ADD COLUMN
         descricao VARCHAR(100);
+
+
+--------------------
+-- USO DOS BANCOS --
+--------------------
+
+-- Buscar Todas as Colunas de Todos os Registros de Uma Tabela --
+SELECT * FROM tb_curso;
+
+-- Inserir Dados em Uma Tabela --
+INSERT INTO tb_curso
+    (nome, carga_horaria)
+VALUES
+    ('Fullstack', '192');
+
+INSERT INTO tb_curso
+    (nome, carga_horaria)
+VALUES
+    ('PHP', '80');
+
+    -- Verificar PORTA --
+    SHOW GLOBAL VARIABLES LIKE 'PORT';
