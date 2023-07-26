@@ -1,4 +1,4 @@
-const { connect } = require('http2');
+//const { connect } = require('http2');
 const mysql2 = require('mysql2/promise');
 
 async function executar(sql) {
@@ -7,7 +7,7 @@ async function executar(sql) {
         user: 'root',
         password: '1234',
         database: 'db_escola',
-        port: '3307',
+        port: '3306',
     });
 
     let [results] = await conexao.query(sql);

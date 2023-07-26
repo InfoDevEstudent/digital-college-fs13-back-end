@@ -1,10 +1,18 @@
 const http = require('http');
+const database = require('./conexao')
 
-function recepcao(req, res) {
+async function recepcao(req, res) {
     if (req.url === '/alunos') {
-        res.end ('Lista de Alunos')
+
+        let dados = await database.executar('SELECT * FROM tb_aluno');
+
+        res.end (
+            JSON.stringify(dados)
+        );
+        return;
     }
 
+    
     res.end('Olá Sergio')
 }
 
