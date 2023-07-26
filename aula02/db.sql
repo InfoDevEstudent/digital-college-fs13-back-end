@@ -50,5 +50,5 @@ INSERT INTO tb_curso
 VALUES
     ('PHP', '80');
 
-    -- Verificar PORTA --
-    SHOW GLOBAL VARIABLES LIKE 'PORT';
+-- Verificar PORTA --
+SHOW GLOBAL VARIABLES LIKE 'PORT';
