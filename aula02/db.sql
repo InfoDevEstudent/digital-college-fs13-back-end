@@ -1,45 +1,45 @@
--- Listar os Bancos de Dados --
+-- Listar os bancos de dados --
 SHOW DATABASES;
 
--- Criar o Banco de Dados --
+-- Criar o banco de dados --
 CREATE DATABASE db_escola;
 
--- Excluir um Banco de Dados ! MUITA ATENÇÃO !--
+-- Excluir um banco de dados --
 DROP DATABASE db_escola;
 
--- Selecionar/Entrar no Banco --
+-- Selecionar/Entrar no banco --
 USE db_escola;
 
--- Listar as Tabelas no Banco --
+-- Listar as tabelas no banco --
 SHOW TABLES;
 
--- Criar uma Tabela --
+-- Criar uma tabela --
 CREATE TABLE tb_curso (
     id INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(100) NOT NULL,
     carga_horaria INT(4)
 );
 
--- Visualizar a Estrutura de uma Tabela --
+-- Visualizar a estrutura de uma tabela --
 DESC tb_curso;
 
--- Excluir uma Tabela --
+-- Excluir uma tabela --
 DROP TABLE tb_curso;
 
--- Alterar uma Tabela --
+-- Alterar uma tabela --
 ALTER TABLE tb_curso
     ADD COLUMN
         descricao VARCHAR(100);
 
+-------------------
+-- USO DOS DADOS --
+-------------------
 
---------------------
--- USO DOS BANCOS --
---------------------
 
--- Buscar Todas as Colunas de Todos os Registros de Uma Tabela --
+-- Buscar todas as colunas de todos os registros de uma tabela --
 SELECT * FROM tb_curso;
 
--- Inserir Dados em Uma Tabela --
+-- Inserir dados em uma tabela --
 INSERT INTO tb_curso
     (nome, carga_horaria)
 VALUES
@@ -50,5 +50,4 @@ INSERT INTO tb_curso
 VALUES
     ('PHP', '80');
 
--- Verificar PORTA --
-SHOW GLOBAL VARIABLES LIKE 'PORT';
+-- Editar os dados de uma tabela --

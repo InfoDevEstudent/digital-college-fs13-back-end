@@ -1,22 +1,33 @@
 function listarTodos() {
-    return 'listar todos os produtos'
+    return JSON.stringify([
+        {
+            id: 1,
+            nome: 'Sapato',
+            preco: 199
+        },
+        {
+            id: 2,
+            nome: 'Bone',
+            preco: 19.87
+        },
+    ]);
 }
 
 function filtrar() {
-    return 'filtrar'
+    return "filtrar";
 }
 
 function destaques() {
-    return 'destaques'
+    return "destaques";
 }
 
 function detalhes() {
-    return 'detalhes'
+    return "detalhes";
 }
 
 module.exports = {
     listarTodos,
-    filtrar,
     destaques,
-    detalhes
-}
+    filtrar,
+    detalhes,
+};

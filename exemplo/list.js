@@ -1,7 +1,7 @@
-function list(){
-    return "Listar"
+function list() {
+    return "Listar";
 }
 
 module.exports = {
-    list
+    list,
 }

@@ -1,7 +1,7 @@
-function add(){
-    return "cadastro"
+function add() {
+    return "Cadastro";
 }
 
 module.exports = {
     add
-}
+};

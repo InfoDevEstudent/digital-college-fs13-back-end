@@ -1,8 +1,7 @@
-const {add} = require('./add.js')
+const {add} = require('./add.js');
 
-let name = 'Felipe';
+let nome = 'Felipe';
 
 console.log('Welcome ' + nome);
-console.log(`Welcome ${nome}`);
-
 console.log(add());
+

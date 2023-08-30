@@ -1,22 +1,22 @@
 function listarTodos() {
-    return 'listar todas as categorias'
+    return "listar todos as categorias";
 }
 
 function filtrar() {
-    return 'filtrar'
+    return "filtrar";
 }
 
 function destaques() {
-    return 'destaques'
+    return "destaques";
 }
 
 function detalhes() {
-    return 'detalhes'
+    return "detalhes";
 }
 
 module.exports = {
     listarTodos,
-    filtrar,
     destaques,
-    detalhes
-}
+    filtrar,
+    detalhes,
+};
